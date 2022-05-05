@@ -19,13 +19,13 @@
 
 
 
-#### Obtaining Certificate
+##Obtaining Certificate
 - Using pyopenssl & urllib you can mention a valid https website
 - After which ssl.get_server_certificate((addr, port), ssl_version=3) obtains the certificate where ssl_version mentions the version of ssl being used
 - Then using crypto.load_certificate(crypto.FILETYPE_PEM, cert) we get the X.509 certificate
 
 
-#### Sockets communication
+##Sockets communication
 <h3>Server side</h3>
 - Using sockets we establish a communication 
 - server_ssl=ssl.wrap_socket(clientsocket,server_side=True,certfile="certificate.pem",keyfile="key.pem",ssl_version=ssl.PROTOCOL_TLSv1)
