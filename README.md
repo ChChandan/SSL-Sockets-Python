@@ -37,4 +37,4 @@
   - We use client_ssl.write(message.encode()) to encrypt the message and send the message 
 
 Output:
->![This is an image](/master/Capture.PNG)
+>![This is an image](/Capture.PNG)
