@@ -1,16 +1,10 @@
 # SSL Communication using Sockets in Python
 ## Network Security Project AY 2022
-## Authors
- [Chandan]()
- 
- [Harshad_Dhane]()
- 
- [Avinash_Reddy]()
 
 ## Problem
 > Two-way authenticated SSL communication
 
-##Approach
+## Approach
 >Back in mid 90's the beginning of the Internet era, very little part of the internet was encrypted because there were only few people on the internet at that time and fewer credit card details shared online.But as the internet grew in popularity new industries emerged such as online shopping and online banking which required data to be encrypted to keep it safe from intruders and made sure access was provided to authentic users only.That was when HTTPS was developed with the help of SSL .Which sits above transport layer and below  application layer.
 
 ## Algorithm
