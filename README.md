@@ -21,11 +21,11 @@
 
 ## Sockets communication
 <h3>Server side</h3>
-- Using sockets we establish a communication 
-- server_ssl=ssl.wrap_socket(clientsocket,server_side=True,certfile="certificate.pem",keyfile="key.pem",ssl_version=ssl.PROTOCOL_TLSv1)
-- In the above line we wrap the communcation in SSL where clientsocket is the new thread to handle that communication and server_side is set to True to let the SSL library know this is server side , certfile contains the location of the certifcate , keyfile contains the location of the private key of the server and ssl_version mentions the version of ssl being used. 
-- When the server recieves the message from client then SSL.read() is used to read the message
-- print(server_ssl.cipher()) Returns the version of encryption being used in this SSL
+  - Using sockets we establish a communication 
+  - server_ssl=ssl.wrap_socket(clientsocket,server_side=True,certfile="certificate.pem",keyfile="key.pem",ssl_version=ssl.PROTOCOL_TLSv1)
+  - In the above line we wrap the communcation in SSL where clientsocket is the new thread to handle that communication and server_side is set to True to let the SSL library know this is server side , certfile contains the location of the certifcate , keyfile contains the location of the private key of the server and ssl_version mentions the version of ssl being used. 
+  - When the server recieves the message from client then SSL.read() is used to read the message
+  - print(server_ssl.cipher()) Returns the version of encryption being used in this SSL
 <h3>Client side</h3>
   - We use client_ssl=ssl.wrap_socket(socket_obj,ca_certs="certificate.pem") to wrap the socket in SSL and mention the server certificate we recieved.
   - We use client_ssl.write(message.encode()) to encrypt the message and send the message 
