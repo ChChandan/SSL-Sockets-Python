@@ -7,15 +7,17 @@
  
  [Avinash_Reddy]()
 
-###Problem
+##Problem
 > Two-way authenticated SSL communication
 
-###Approach
+##Approach
 >Back in mid 90's the beginning of the Internet era, very little part of the internet was encrypted because there were only few people on the internet at that time and fewer credit card details shared online.But as the internet grew in popularity new industries emerged such as online shopping and online banking which required data to be encrypted to keep it safe from intruders and made sure access was provided to authentic users only.That was when HTTPS was developed with the help of SSL .Which sits above transport layer and below  application layer.
-###Algorithm
-><a href="https://msatechnosoft.in/blog/wp-content/uploads/2017/06/SSL-flowchart-msa-technosoft.png"/>
 
-### Algorithm 
+##Algorithm
+>![This is an image](https://msatechnosoft.in/blog/wp-content/uploads/2017/06/SSL-flowchart-msa-technosoft.png)
+
+
+
 
 #### Obtaining Certificate
 - Using pyopenssl & urllib you can mention a valid https website
@@ -35,4 +37,4 @@
   - We use client_ssl.write(message.encode()) to encrypt the message and send the message 
 
 Output:
-<a href="Capture.PNG"/>
+>![This is an image](/master/Capture.PNG)
