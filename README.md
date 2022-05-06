@@ -30,6 +30,7 @@
   - We use client_ssl=ssl.wrap_socket(socket_obj,ca_certs="certificate.pem") to wrap the socket in SSL and mention the server certificate we recieved.
   - We use client_ssl.write(message.encode()) to encrypt the message and send the message 
 
+<br>
 Cipherspec suite:
 >![This is an image](/Cipherspec.PNG)
 
